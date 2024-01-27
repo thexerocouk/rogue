@@ -106,7 +106,7 @@ if __name__ == '__main__':
         else:
             pass
         if(opts['format'] == 'NETNTLMv1'):
-            print("hashcat command: hashcat -m 5500 %s -w wordlist" % opts['output'])
+            print("hashcat command: hashcat -m 5500 %s wordlist" % opts['output'])
             hash_list = convert2NetNTLMv1(hash_list)
         else:
             pass
